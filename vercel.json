@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
+      "src": "package.json",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/fireworks-tqd/(.*)",
-      "dest": "/$1"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
